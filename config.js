@@ -1,13 +1,19 @@
 
 var config = {
     lines: [
+        `
         "Dear stfu,",
-        "i never knew how much you mean to me when we first started talking . until today,i still love you as much as i did since the very first day we met. ",
-        " every since you came into my life, i felt like i was the happiest. i just want to let you know how much you mean to me and how much i appreciate you.",
-        "you never failed to make me smile. things aren't getting better every since we fought, i just miss you so much. having random break downs, with you on my mind wondering if you're doing fine. im sorry i wasn't what you wanted,",
-        "im sorry i wasn't the best, im sorry i couldn't be good enough for you.i just hope everything will be okay soon, i really miss how we used to talk.🥹", 
+        Three months ago, our journey began, and every moment since then has been filled with love, laughter, and endless joy. Today, as we celebrate our three-month anniversary, I am reminded of how grateful I am to have you in my life. You bring light into my days and warmth into my heart.
+
+Together, we've shared countless unforgettable memories, overcome challenges, and grown stronger with each passing day. This milestone is a testament to the love and commitment we share.
+
+Here's to the countless adventures yet to come, the laughter we'll share, and the love that will continue to grow between us. Happy three-month anniversary, my love. I cherish every moment with you."
+
+Feel free to adjust and personalize this message to better suit your relationship and the tone you want to convey on your website. Congratulations on your anniversary! 
+
+        `
        
     ],
-    date:"2022-08-09T20:15:00",
-    names: ["☃︎【 Your Tanmay 】","‎ "]
+    date:"2023-11-30T20:15:00",
+    names: ["☃︎【 Your ..... 】","‎ "]
 }
