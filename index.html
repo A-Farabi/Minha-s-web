@@ -10,6 +10,7 @@
     <title>Our Story</title>
 
     <link type="text/css" rel="stylesheet" href="./index_files/default.css">
+
     <script type="text/javascript" src="./index_files/jquery.min.js"></script>
     <script type="text/javascript" src="./index_files/jscex.min.js"></script>
     <script type="text/javascript" src="./index_files/jscex-parser.js"></script>
@@ -31,14 +32,14 @@
 </head>
 
 <body> 
-    <h1 style="display: flex; align-items: center; justify-content: center; text-align: center;"> THIS IS ALL FAKE THO 😋</h1>
-
 
     <img src="https://ajlovechina.github.io/loveBalloon/static/music.png" style="position: fixed;z-index: 10001;top:100px;right:100px; width: 70px; height: 70px;"
         onclick="let m = document.querySelector('.song-audio-autoplay'); if (m.paused ) {m.play(); this.className = 'rotateImages'} else {m.pause(); this.className = ''}">
     <audio class="song-audio-autoplay" controls loop style="display: none;visibility: hidden">
         <source src="./index_files/music.mp3" type="audio/mp3" />
     </audio>
+
+
     <style type="text/css">
         .rotateImages {
             -webkit-animation: myRotate 10s linear infinite;
@@ -269,6 +270,38 @@
             runAsync().start();
         })();
     </script>
+
+    <!-- second audio ======================================= -->
+
+
+
+    <audio id="myAudio" autoplay>
+        <source src="index_files/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <div class="button-div">
+        <button onclick="toggleAudio()" class="secondary-btn"> Default Song [Tap to Pause/Play]</button>
+    </div>
+        
+<script>
+    var audio = document.getElementById("myAudio");
+    
+    function toggleAudio() {
+        if (audio) {
+            if (audio.paused) {
+                audio.play().catch(function(error) {
+                    console.error('Failed to play audio:', error);
+                });
+            } else {
+                audio.pause();
+            }
+        } else {
+            console.error('Audio element not found');
+        }
+    }
+</script>
+
 
 </body>
 
